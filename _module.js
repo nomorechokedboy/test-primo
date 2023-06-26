@@ -1437,8 +1437,8 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div, "class", "contentContainer svelte-w37nat");
-			attr(button, "class", button_class_value = "button " + /*variant*/ ctx[0] + " " + (/*fullWidth*/ ctx[1] ? 'fullWidth' : '') + " " + /*$$props*/ ctx[2].class + " svelte-w37nat");
+			attr(div, "class", "contentContainer svelte-1vip2wa");
+			attr(button, "class", button_class_value = "container " + /*variant*/ ctx[0] + " " + (/*fullWidth*/ ctx[1] ? 'fullWidth' : '') + " " + /*$$props*/ ctx[2].class + " svelte-1vip2wa");
 		},
 		m(target, anchor) {
 			insert_hydration(target, button, anchor);
@@ -1508,7 +1508,7 @@ function create_fragment$2(ctx) {
 				}
 			}
 
-			if (!current || dirty & /*variant, fullWidth, $$props*/ 7 && button_class_value !== (button_class_value = "button " + /*variant*/ ctx[0] + " " + (/*fullWidth*/ ctx[1] ? 'fullWidth' : '') + " " + /*$$props*/ ctx[2].class + " svelte-w37nat")) {
+			if (!current || dirty & /*variant, fullWidth, $$props*/ 7 && button_class_value !== (button_class_value = "container " + /*variant*/ ctx[0] + " " + (/*fullWidth*/ ctx[1] ? 'fullWidth' : '') + " " + /*$$props*/ ctx[2].class + " svelte-1vip2wa")) {
 				attr(button, "class", button_class_value);
 			}
 		},
