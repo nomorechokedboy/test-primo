@@ -6469,7 +6469,7 @@ function create_each_block_1$1(ctx) {
 			if (!src_url_equal(img.src, img_src_value = /*src*/ ctx[16])) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*alt*/ ctx[17]);
 			attr(p, "class", "caption svelte-362k64");
-			attr(figcaption, "class", "captionContainer");
+			attr(figcaption, "class", "captionWrapper svelte-362k64");
 			attr(figure, "class", "imageContainer svelte-362k64");
 		},
 		m(target, anchor) {
