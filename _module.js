@@ -1142,18 +1142,18 @@ function create_fragment(ctx) {
 			link1 = element("link");
 			link2 = element("link");
 			style = element("style");
-			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\n#page {\n  font-family: system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\nhtml {\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nbody {\n\t@apply bg-white;\n}\n\nhtml {\n\tscroll-behavior: smooth;\n}");
+			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\nhtml {\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nbody {\n\t@apply bg-white;\n}\n\nhtml {\n\tscroll-behavior: smooth;\n}");
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-zpk80h', document.head);
+			const head_nodes = head_selector('svelte-lsv7sk', document.head);
 			meta = claim_element(head_nodes, "META", { name: true, content: true });
 			link0 = claim_element(head_nodes, "LINK", { rel: true, href: true });
 			link1 = claim_element(head_nodes, "LINK", { rel: true, href: true, crossorigin: true });
 			link2 = claim_element(head_nodes, "LINK", { href: true, rel: true });
 			style = claim_element(head_nodes, "STYLE", {});
 			var style_nodes = children(style);
-			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\n#page {\n  font-family: system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\nhtml {\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nbody {\n\t@apply bg-white;\n}\n\nhtml {\n\tscroll-behavior: smooth;\n}");
+			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\nhtml {\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nbody {\n\t@apply bg-white;\n}\n\nhtml {\n\tscroll-behavior: smooth;\n}");
 			style_nodes.forEach(detach);
 			head_nodes.forEach(detach);
 			this.h();
