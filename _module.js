@@ -1831,7 +1831,7 @@ function create_fragment$3(ctx) {
 			attr(div2, "class", "navigationContainer svelte-14e2hhu");
 			attr(div3, "class", "header svelte-14e2hhu");
 			attr(div4, "class", "section");
-			attr(div4, "id", "section-4756d9a6");
+			attr(div4, "id", "section-dd14c65e");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div4, anchor);
@@ -2443,7 +2443,7 @@ function create_fragment$5(ctx) {
 			attr(div0, "class", "section-container content svelte-z64qd0");
 			attr(div1, "class", "section");
 			attr(div2, "class", "section");
-			attr(div2, "id", "section-3e653ee4");
+			attr(div2, "id", "section-f75ddfb2");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -5220,7 +5220,7 @@ function create_fragment$9(ctx) {
 						}
 					}
 				],
-				button_text: "Đăng ký tư vấn"
+				button_text: "Đăng ký tư vấn Updated"
 			}
 		});
 
@@ -5229,8 +5229,8 @@ function create_fragment$9(ctx) {
 	component_3 = new Component$5({
 			props: {
 				content: {
-					"html": "<h1>Welcome 👋</h1><p>Changed</p><h2>Heading 2</h2><p>A simple paragraph. You can use markdown in this block. <strong>Duis aute</strong> irure dolor in reprehenderit in voluptate velit esse cillum dolore <em>eu fugiat</em> nulla pariatur. Excepteur sint <strong>occaecat cupidatat</strong> non proident, sunt in culpa qui officia <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link link link link link link\" href=\"/\">deserunt mollit</a> anim id est laborum.</p><h3>Heading 3</h3><p>Enjoy :)</p>",
-					"markdown": "# Welcome 👋\n\nChanged\n\n## Heading 2\n\nA simple paragraph. You can use markdown in this block. **Duis aute** irure dolor in reprehenderit in voluptate velit esse cillum dolore *eu fugiat* nulla pariatur. Excepteur sint **occaecat cupidatat** non proident, sunt in culpa qui officia [deserunt mollit](</>) anim id est laborum.\n\n### Heading 3\n\nEnjoy :)\n\n"
+					"html": "<h1 id=\"whatthechange\">What the change</h1>\n<p>Welcome, feel free to delete these blocks and create your own by clicking the \"+\" button in the side panel. Click the code button in the corner of this block to change its styling.</p>\n<h2 id=\"heading2updated\">Heading 2 Updated</h2>\n<p>A simple paragraph. You can use markdown in this block. <strong>Duis aute</strong> irure dolor in reprehenderit in voluptate velit esse cillum dolore <em>eu fugiat</em> nulla pariatur. Excepteur sint <strong>occaecat cupidatat</strong> non proident, sunt in culpa qui officia <a href=\"/\">deserunt mollit</a> anim id est laborum.</p>\n<h3 id=\"heading3\">Heading 3</h3>",
+					"markdown": "# What the change\n\nWelcome, feel free to delete these blocks and create your own by clicking the \"+\" button in the side panel. Click the code button in the corner of this block to change its styling.\n\n## Heading 2 Updated\n\nA simple paragraph. You can use markdown in this block. **Duis aute** irure dolor in reprehenderit in voluptate velit esse cillum dolore *eu fugiat* nulla pariatur. Excepteur sint **occaecat cupidatat** non proident, sunt in culpa qui officia [deserunt mollit](</>) anim id est laborum.\n\n### Heading 3\n\n"
 				}
 			}
 		});
