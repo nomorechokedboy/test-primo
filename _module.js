@@ -1129,25 +1129,31 @@ class SvelteComponent {
 
 function create_fragment(ctx) {
 	let meta;
-	let link;
+	let link0;
+	let link1;
+	let link2;
 	let style;
 	let t;
 
 	return {
 		c() {
 			meta = element("meta");
-			link = element("link");
+			link0 = element("link");
+			link1 = element("link");
+			link2 = element("link");
 			style = element("style");
-			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\n#page {\n  font-family: system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition);\n}\n\n.button:hover {\n    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);\n  }\n\n.button.inverted {\n    background: transparent; \n    color: var(--color-accent); \n    border: 2px solid var(--color-accent);\n  }");
+			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\n#page {\n  font-family: system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\nhtml {\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nbody {\n\t@apply bg-white;\n}\n\nhtml {\n\tscroll-behavior: smooth;\n}");
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-18pfc0o', document.head);
+			const head_nodes = head_selector('svelte-zpk80h', document.head);
 			meta = claim_element(head_nodes, "META", { name: true, content: true });
-			link = claim_element(head_nodes, "LINK", { rel: true, href: true });
+			link0 = claim_element(head_nodes, "LINK", { rel: true, href: true });
+			link1 = claim_element(head_nodes, "LINK", { rel: true, href: true, crossorigin: true });
+			link2 = claim_element(head_nodes, "LINK", { href: true, rel: true });
 			style = claim_element(head_nodes, "STYLE", {});
 			var style_nodes = children(style);
-			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\n#page {\n  font-family: system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition);\n}\n\n.button:hover {\n    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);\n  }\n\n.button.inverted {\n    background: transparent; \n    color: var(--color-accent); \n    border: 2px solid var(--color-accent);\n  }");
+			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n\n#page {\n  font-family: system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\nhtml {\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nbody {\n\t@apply bg-white;\n}\n\nhtml {\n\tscroll-behavior: smooth;\n}");
 			style_nodes.forEach(detach);
 			head_nodes.forEach(detach);
 			this.h();
@@ -1155,12 +1161,19 @@ function create_fragment(ctx) {
 		h() {
 			attr(meta, "name", "viewport");
 			attr(meta, "content", "width=device-width, initial-scale=1.0");
-			attr(link, "rel", "stylesheet");
-			attr(link, "href", "https://github.com/nomorechokedboy/soc-bong-kindergarten/blob/feat/cms/primo-components/style.css");
+			attr(link0, "rel", "preconnect");
+			attr(link0, "href", "https://fonts.googleapis.com");
+			attr(link1, "rel", "preconnect");
+			attr(link1, "href", "https://fonts.gstatic.com");
+			attr(link1, "crossorigin", "");
+			attr(link2, "href", "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+			attr(link2, "rel", "stylesheet");
 		},
 		m(target, anchor) {
 			append_hydration(document.head, meta);
-			append_hydration(document.head, link);
+			append_hydration(document.head, link0);
+			append_hydration(document.head, link1);
+			append_hydration(document.head, link2);
 			append_hydration(document.head, style);
 			append_hydration(style, t);
 		},
@@ -1169,7 +1182,9 @@ function create_fragment(ctx) {
 		o: noop,
 		d(detaching) {
 			detach(meta);
-			detach(link);
+			detach(link0);
+			detach(link1);
+			detach(link2);
 			detach(style);
 		}
 	};
