@@ -1566,7 +1566,7 @@ function get_each_context$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (112:3) {#if opened}
+// (113:3) {#if opened}
 function create_if_block(ctx) {
 	let ul;
 	let each_blocks = [];
@@ -1623,8 +1623,8 @@ function create_if_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(li, "class", "buttonWrapper svelte-14e2hhu");
-			attr(ul, "class", "navigations svelte-14e2hhu");
+			attr(li, "class", "buttonWrapper svelte-7vb4ll");
+			attr(ul, "class", "navigations svelte-7vb4ll");
 		},
 		m(target, anchor) {
 			insert_hydration(target, ul, anchor);
@@ -1685,7 +1685,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (114:5) {#each navigations as {link: { label, href }}
+// (115:5) {#each navigations as {link: { label, href }}
 function create_each_block$1(key_1, ctx) {
 	let li;
 	let a;
@@ -1714,7 +1714,7 @@ function create_each_block$1(key_1, ctx) {
 		},
 		h() {
 			attr(a, "href", a_href_value = /*href*/ ctx[9]);
-			attr(li, "class", "navigation svelte-14e2hhu");
+			attr(li, "class", "navigation svelte-7vb4ll");
 			this.first = li;
 		},
 		m(target, anchor) {
@@ -1736,7 +1736,7 @@ function create_each_block$1(key_1, ctx) {
 	};
 }
 
-// (122:6) <Button fullWidth>
+// (123:6) <Button fullWidth>
 function create_default_slot(ctx) {
 	let span;
 	let t;
@@ -1755,7 +1755,7 @@ function create_default_slot(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "button svelte-14e2hhu");
+			attr(span, "class", "button svelte-7vb4ll");
 		},
 		m(target, anchor) {
 			insert_hydration(target, span, anchor);
@@ -1839,12 +1839,12 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "class", "logo svelte-14e2hhu");
+			attr(img, "class", "logo svelte-7vb4ll");
 			if (!src_url_equal(img.src, img_src_value = /*logo*/ ctx[0].src)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*logo*/ ctx[0].description);
-			attr(div1, "class", "burgerWrapper svelte-14e2hhu");
-			attr(div2, "class", "navigationContainer svelte-14e2hhu");
-			attr(div3, "class", "header svelte-14e2hhu");
+			attr(div1, "class", "burgerWrapper svelte-7vb4ll");
+			attr(div2, "class", "navigationContainer svelte-7vb4ll");
+			attr(div3, "class", "header svelte-7vb4ll");
 			attr(div4, "class", "section");
 			attr(div4, "id", "section-dd14c65e");
 		},
